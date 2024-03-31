@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Route</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Source, Intermediate Stations and Destination :</h1>
+        <ul th:each="element : ${route}">
+            <li th:text="${element}"></li>
+        </ul>
+    </div>
+</body>
+</html>

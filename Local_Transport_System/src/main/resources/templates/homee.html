@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Transport System</title>
+  <style>
+    body {
+        background-image: url('https://img.freepik.com/premium-vector/male-passenger-waiting-bus-buy-ticket-public-urban-transport-self-service-machine_341509-3638.jpg'); /* Replace 'city-map.jpg' with your image file path */
+        background-size: cover;
+        background-position: center;
+<!--        display: flex;-->
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        border: 5px solid rgb(128, 128, 128); /* Add a 20px transparent border */
+        cursor: pointer;
+    }
+
+    .signup {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .login {
+        background-color: #008CBA;
+        color: white;
+    }
+    h1{
+      color: rgb(255, 0, 0);
+      margin: 20px;
+      padding: 10px;
+      background-color: rgb(181, 197, 1);
+      border: 5px solid rgb(128, 128, 128);
+    }
+    p{
+      margin: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1> LOCAL TRANSPORT SYSTEM</h1><br>
+<div class="button-container">
+  <a class="button signup" th:href="@{/user/home/signup}">Signup</a>
+  <a class="button login" th:href="@{/user/home/login}">Login</a>
+</div><br>
+<p>
+  Introduction:<br>
+  India, a country of diverse cultures and landscapes, is renowned for its bustling streets and vibrant cities. Amidst the urban chaos, one iconic mode of transportation stands out — the auto rickshaw. This three-wheeled wonder, known for its agility and efficiency, forms an intricate network that weaves through the streets of Indian cities, connecting people from all walks of life. In this article, we explore the fascinating world of the auto rickshaw network in India, shedding light on its history, significance, and the role it plays in the daily lives of millions.</p>
+<p>A Historical Perspective:<br>
+  The auto rickshaw, often colloquially referred to as the "auto" or "tuk-tuk," made its debut in India in the mid-20th century. Introduced as a means to bridge the gap between cycle rickshaws and full-sized taxis, the auto rickshaw quickly gained popularity for its maneuverability and cost-effectiveness. Over the years, it evolved into a ubiquitous presence on India's roads, adapting to the diverse needs of commuters in both urban and rural areas.</p>
+<p>Purpose of this Project:<br>
+  The purpose of the project is to create a system of web java application that can be accessed by the common people and local travelers just with the access of internet to find their paths and different routes according to their destination. To get the estimation of number of stops in between while travelling through an auto or bus.</p>
+</body>
+</html>

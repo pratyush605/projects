@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1564497631167-ffc10306af7b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0byUyMHJpY2tzaGF3fGVufDB8fDB8fHww'); /* Replace 'city-map.jpg' with your image file path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+        background-color: rgb(255, 127, 78); /* Change the color on hover */
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <form th:action="@{/user/home/login/home/route}" th:object="${input}" method="post">
+        <label for="source">Destination:</label>
+        <select name="source" th:field="*{source}" id="source">
+            <option value="Rambagh">Rambagh</option>
+            <option value="Bhagwan Talkies">Bhagwan Talkies</option>
+            <option value="Bijli Ghar">Bijli Ghar</option>
+            <option value="Raja Mandi">Raja Mandi</option>
+            <option value="Khandari">Khandari</option>
+            <option value="Khandauli">Khandauli</option>
+            <option value="Water Works">Water Works</option>
+            <option value="Kamla Nagar">Kamla Nagar</option>
+        </select>
+        <br>
+        <br>
+        <label for="destination">Source:</label>
+        <select name="destination" th:field="*{destination}" id="destination">
+            <option value="Rambagh">Rambagh</option>
+            <option value="Bhagwan Talkies">Bhagwan Talkies</option>
+            <option value="Bijli Ghar">Bijli Ghar</option>
+            <option value="Raja Mandi">Raja Mandi</option>
+            <option value="Khandari">Khandari</option>
+            <option value="Khandauli">Khandauli</option>
+            <option value="Water Works">Water Works</option>
+            <option value="Kamla Nagar">Kamla Nagar</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="https://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>String Inputs</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            height: 100vh;-->
+<!--            margin: 0;-->
+<!--        }-->
+<!--        .form-container {-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<p>input options are rambagh, bhagwanTalkies, bijliGhar, rajaMandi, khandari, khandauli, waterWorks,kamlaNagar</p>-->
+<!--<div class="form-container">-->
+<!--    <form th:action="@{/user/home/login/home/route}" th:object="${input}" method="post"><br>-->
+<!--        <label for="input1">Input 1:</label>-->
+<!--        <input type="text" th:field="*{source}" id="input1" name="input1" required>-->
+
+<!--        <br>-->
+
+<!--        <label for="input2">Input 2:</label>-->
+<!--        <input type="text" th:field="*{destination}" id="input2" name="input2" required>-->
+
+<!--        <br>-->
+
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
